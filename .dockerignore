@@ -1,0 +1,11 @@
+fly.toml
+.git/
+*.sqlite3
+.venv
+venv/
+.env
+media/
+staticfiles/
+.DS_Store
+__pycache__/
+*.pyc
