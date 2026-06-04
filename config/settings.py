@@ -45,6 +45,8 @@ SITE_ID = 1
 INSTALLED_APPS = [
     # Third party Apps
     "embed_video",
+    "debug_toolbar",
+    "redisboard",
     # User Apps
     "courses.apps.CoursesConfig",
     "students.apps.StudentsConfig",
@@ -59,11 +61,14 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     # Third party midd
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     # User midd
     # Inner
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    # "django.middleware.cache.UpdateCacheMiddleware",
     "django.middleware.common.CommonMiddleware",
+    # "django.middleware.cache.FetchFromCacheMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -172,3 +177,16 @@ INTERNAL_IPS = [
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
+
+REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/0")
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": REDIS_URL,
+    }
+}
+
+CACHE_MIDDLEWARE_ALIAS = "default"
+CACHE_MIDDLEWARE_SECONDS = 60 * 15  # 15 minutes
+CACHE_MIDDLEWARE_KEY_PREFIX = "education"
