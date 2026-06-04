@@ -51,6 +51,11 @@ h1 {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.header-wrapper {
+    background: #4dcc43;
+    border-bottom: 6px solid #3fad37;
+}
+
 #header, 
 #content {
     max-width: 1200px;
@@ -72,8 +77,7 @@ h1 {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #4dcc43;
-    border-bottom: 6px solid #3fad37;
+    
 }
 
 #header .logo {
