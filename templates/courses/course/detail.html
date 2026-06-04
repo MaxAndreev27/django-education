@@ -19,15 +19,15 @@
         </p>
         {{ object.overview|linebreaks }}
         {% if request.user.is_authenticated %}
-        {% comment %} <form action="{% url "student_enroll_course" %}" method="post">
+        <form action="{% url "student_enroll_course" %}" method="post">
             {{ enroll_form }}
             {% csrf_token %}
             <input type="submit" value="Enroll now">
-        </form> {% endcomment %}
+        </form>
         {% else %}
-        {% comment %} <a href="{% url "student_registration" %}" class="button">
+        <a href="{% url "student_registration" %}" class="button">
             Register to enroll
-        </a> {% endcomment %}
+        </a>
         {% endif %}
     </div>
     {% endwith %}

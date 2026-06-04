@@ -14,6 +14,8 @@ import mimetypes
 import os
 from pathlib import Path
 
+from django.urls import reverse_lazy
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -42,8 +44,10 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     # Third party Apps
+    "embed_video",
     # User Apps
     "courses.apps.CoursesConfig",
+    "students.apps.StudentsConfig",
     # Inner
     "django.contrib.admin",
     "django.contrib.auth",
@@ -166,3 +170,5 @@ INTERNAL_IPS = [
 ]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
