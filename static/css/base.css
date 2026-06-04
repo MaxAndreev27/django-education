@@ -180,7 +180,7 @@ h1 {
 input[type="submit"], 
 .button {
     display: inline-block;
-    color: #fff;
+    color: #fff !important;
     background: #3fad37;
     border-radius: 4px;
     padding: 10px 24px;
