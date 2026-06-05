@@ -349,6 +349,119 @@ form p select:focus {
 }
 
 /* ==========================================================================
+   Двоколонковий макет для сторінок із боковим меню (Декстоп)
+   ========================================================================== */
+@media (min-width: 769px) {
+
+    /* Перетворюємо контент у сітку, ТІЛЬКИ якщо на сторінці є бокова панель .contents */
+    #content:has(.contents) {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        /* Ліва колонка 280px, права - все інше */
+        gap: 40px;
+        align-items: start;
+    }
+
+    /* Змушуємо h1 займати обидві колонки зверху */
+    #content:has(.contents) h1 {
+        grid-column: 1 / -1;
+        margin-left: -20px;
+        /* Компенсуємо падінги контейнера #content */
+        margin-right: -20px;
+        width: calc(100% + 40px);
+    }
+
+    /* Стилізація лівої бокової панелі (меню) */
+    .contents {
+        grid-column: 1;
+        background: #2a2a2a;
+        /* Темний фон як на скріншоті */
+        color: #fff;
+        padding: 25px 20px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Стилізація правої панелі з контентом */
+    .module {
+        grid-column: 2;
+        max-width: 100% !important;
+        /* Перебиваємо старе обмеження у 600px */
+        margin-bottom: 0;
+    }
+}
+
+/* ==========================================================================
+   Красиве оформлення списку модулів всередині темного меню
+   ========================================================================== */
+.contents h3 {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
+.contents h3 a {
+    color: #4dcc43;
+    /* Зелений колір для лінка чату */
+}
+
+#modules {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+#modules li {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+#modules li a {
+    display: block;
+    padding: 12px 15px;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Маленький напис "Module X" над назвою */
+#modules li a span {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Ефект наведення та активний (обраний) модуль */
+#modules li:hover {
+    background: #383838;
+}
+
+#modules li.selected {
+    background: #333333;
+    border-left: 4px solid #4dcc43;
+    /* Зелений акцентний маркер ліворуч */
+}
+
+#modules li.selected a {
+    color: #fff;
+    font-weight: 500;
+    padding-left: 11px;
+    /* Компенсуємо ширину border-left */
+}
+
+#modules li.selected a span .order {
+    color: #4dcc43;
+}
+
+/* ==========================================================================
    Адаптивний дизайн (Media Queries)
    ========================================================================== */
 @media (max-width: 768px) {
