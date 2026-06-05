@@ -44,13 +44,16 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     # Third party Apps
+    "daphne",
     "embed_video",
     "debug_toolbar",
     "redisboard",
     "rest_framework",
+    "channels",
     # User Apps
     "courses.apps.CoursesConfig",
     "students.apps.StudentsConfig",
+    "chat.apps.ChatConfig",
     # Inner
     "django.contrib.admin",
     "django.contrib.auth",
@@ -95,6 +98,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
+ASGI_APPLICATION = "config.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
@@ -180,6 +184,8 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
 
 REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/0")
+if "protocol" not in REDIS_URL:
+    REDIS_URL += ("&" if "?" in REDIS_URL else "?") + "protocol=2"
 
 CACHES = {
     "default": {
@@ -196,4 +202,13 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
     ]
+}
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [REDIS_URL],
+        },
+    },
 }

@@ -8,5 +8,5 @@ python manage.py migrate --noinput
 echo "==> Loading initial subjects fixtures..."
 python manage.py loaddata subjects.json
 
-echo "==> Starting Gunicorn server..."
-exec gunicorn --bind 0.0.0.0:8000 --workers 2 config.wsgi
+echo "==> Starting Daphne ASGI server..."
+exec daphne -b 0.0.0.0 -p 8000 config.asgi:application
