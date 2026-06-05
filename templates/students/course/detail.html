@@ -7,7 +7,8 @@
 
 {% block content %}
   <h1>
-    {{ module.title }}
+    {# Перевіряємо, чи є взагалі назва у модуля #}
+    {% if module %}{{ module.title }}{% else %}No modules available{% endif %}
   </h1>
   <div class="contents">
     <h3>Modules</h3>
@@ -33,13 +34,17 @@
     </h3>
   </div>
   <div class="module">
-    {% cache 600 module_contents module %}
-      {% for content in module.contents.all %}
-        {% with item=content.item %}
-          <h2>{{ item.title }}</h2>
-          {{ item.render }}
-        {% endwith %}
-      {% endfor %}
-    {% endcache %}
+    {% if module %}
+      {% cache 600 module_contents module %}
+        {% for content in module.contents.all %}
+          {% with item=content.item %}
+            <h2>{{ item.title }}</h2>
+            {{ item.render }}
+          {% endwith %}
+        {% endfor %}
+      {% endcache %}
+    {% else %}
+      <p>This course does not have any modules or content available yet.</p>
+    {% endif %}
   </div>
 {% endblock %}

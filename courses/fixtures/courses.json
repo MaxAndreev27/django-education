@@ -1,0 +1,151 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Mathematics",
+    "slug": "mathematics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Music",
+    "slug": "music"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Physics",
+    "slug": "physics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 4,
+  "fields": {
+    "title": "Programming",
+    "slug": "programming"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 2,
+    "subject": 1,
+    "title": "Calculus: From Theory to Practical Applications",
+    "slug": "calculus-from-theory-to-practical-applications",
+    "overview": "This course covers the fundamental concepts of differential and integral calculus. You will learn how to analyze functions, find limits, calculate derivatives and integrals, and apply this knowledge to solve practical problems in physics, economics, and engineering.",
+    "created": "2026-06-05T18:12:52.073Z",
+    "students": [
+      2
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "owner": 2,
+    "subject": 1,
+    "title": "Linear Algebra and Geometry for Data Science",
+    "slug": "linear-algebra-and-geometry-for-data-science",
+    "overview": "An intensive program focused on mastering vectors, matrices, linear transformations, and eigenvalues. These concepts form the mathematical foundation for machine learning algorithms, computer vision, and big data analysis.",
+    "created": "2026-06-05T18:13:11.319Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": 2,
+    "subject": 2,
+    "title": "Music Theory and Solfège for Beginners",
+    "slug": "music-theory-and-solfege-for-beginners",
+    "overview": "This course is designed for anyone wanting to learn how to read sheet music, understand rhythmic structures, and build chords and intervals. The knowledge gained will provide a solid foundation for playing any instrument, singing, or songwriting.",
+    "created": "2026-06-05T18:13:29.377Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 5,
+  "fields": {
+    "owner": 2,
+    "subject": 2,
+    "title": "Electronic Music Production in Ableton Live",
+    "slug": "electronic-music-production-in-ableton-live",
+    "overview": "A hands-on course in digital audio recording, arrangement, and production. You will learn how to navigate a DAW, synthesize unique sounds, apply audio effects, and create your own tracks from the very first note to the final mix.",
+    "created": "2026-06-05T18:13:45.919Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 6,
+  "fields": {
+    "owner": 2,
+    "subject": 3,
+    "title": "Classical Mechanics: Laws of Motion and the Universe",
+    "slug": "classical-mechanics-laws-of-motion-and-the-universe",
+    "overview": "A deep dive into Newtonian physics. The course covers kinematics, dynamics, the laws of conservation of energy and momentum, and the basics of celestial mechanics, allowing you to understand the motion of objects both on Earth and in deep space.",
+    "created": "2026-06-05T18:14:05.568Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 7,
+  "fields": {
+    "owner": 2,
+    "subject": 3,
+    "title": "Introduction to Quantum Physics: The Subatomic World",
+    "slug": "introduction-to-quantum-physics-the-subatomic-world",
+    "overview": "This course opens the door to the mind-bending world of subatomic particles. You will explore wave-particle duality, the Schrödinger equation, quantum entanglement, and see how these paradoxical theories are applied in modern technologies like lasers and quantum computing.",
+    "created": "2026-06-05T18:14:22.852Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 8,
+  "fields": {
+    "owner": 2,
+    "subject": 4,
+    "title": "Python Programming Basics: A Fast Track",
+    "slug": "python-programming-basics-a-fast-track",
+    "overview": "An ideal starting point for absolute beginners. You will master the basic syntax of Python, learn to work with variables, loops, functions, and core data structures. By the end of the course, you will write your first automation scripts and simple games.",
+    "created": "2026-06-05T18:14:42.131Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 9,
+  "fields": {
+    "owner": 2,
+    "subject": 4,
+    "title": "Full-Stack Web Development: Building Modern Applications",
+    "slug": "full-stack-web-development-building-modern-applications",
+    "overview": "A comprehensive program for aspiring web developers. The course covers frontend technologies (HTML5, CSS3, modern JavaScript, and React) as well as backend development (Node.js, Express, and databases), enabling you to design and launch fully functional websites from scratch.",
+    "created": "2026-06-05T18:15:03.447Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.video",
+  "pk": 1,
+  "fields": {
+    "owner": 2,
+    "title": "Custom User Model",
+    "created": "2026-06-04T16:44:59.701Z",
+    "updated": "2026-06-04T16:46:23.095Z",
+    "url": "https://www.youtube.com/watch?v=bgV39DlmZ2U"
+  }
+}
+]
