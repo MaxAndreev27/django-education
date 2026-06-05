@@ -187,6 +187,12 @@ REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/0")
 if "protocol" not in REDIS_URL:
     REDIS_URL += ("&" if "?" in REDIS_URL else "?") + "protocol=2"
 
+# Глобально вмикаємо IPv6 для Redis при деплої на Fly.io
+if "FLY_APP_NAME" in os.environ:
+    import redis.connection
+
+    redis.connection.URL_SCHEMES["redis"] = redis.connection.IPv6Connection
+
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",
