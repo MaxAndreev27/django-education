@@ -7,19 +7,32 @@ from django.utils import timezone
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
+    # async def connect(self):
+    #     # self.user = self.scope["user"]
+    #     self.user = self.scope.get("user")
+    #     # self.id = self.scope["url_route"]["kwargs"]["course_id"]
+    #     url_route = self.scope.get("url_route") or {}
+    #     kwargs = url_route.get("kwargs") or {}
+    #     self.id = kwargs.get("course_id")
+
+    #     self.room_group_name = f"chat_{self.id}"
+
+    #     # join room group
+    #     await self.channel_layer.group_add(self.room_group_name, self.channel_name)
+    #     # accept connection
+    #     await self.accept()
+
     async def connect(self):
-        # self.user = self.scope["user"]
         self.user = self.scope.get("user")
-        # self.id = self.scope["url_route"]["kwargs"]["course_id"]
-        url_route = self.scope.get("url_route") or {}
-        kwargs = url_route.get("kwargs") or {}
+        kwargs = (self.scope.get("url_route") or {}).get("kwargs") or {}
         self.id = kwargs.get("course_id")
-
+        if not self.id:
+            await self.close()
+            return
         self.room_group_name = f"chat_{self.id}"
-
-        # join room group
+        if self.channel_layer is None:
+            raise Exception("Redis / CHANNEL_LAYERS not configured")
         await self.channel_layer.group_add(self.room_group_name, self.channel_name)
-        # accept connection
         await self.accept()
 
     async def disconnect(self, close_code):

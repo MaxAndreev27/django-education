@@ -47,7 +47,12 @@
   };
 
   chatSocket.onclose = function(event) {
-    console.error('Chat socket closed unexpectedly');
+    console.log(
+        'Socket closed',
+        event.code,
+        event.reason,
+        event.wasClean
+    );
   };
 
   const input = document.getElementById('chat-message-input');
