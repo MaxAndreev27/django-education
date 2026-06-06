@@ -36,3 +36,5 @@ staticfiles/
 # ОС-специфічні файли
 .DS_Store
 Thumbs.db
+
+*.tar.gz
