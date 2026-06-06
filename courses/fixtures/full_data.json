@@ -1,0 +1,1330 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "Instructors",
+    "permissions": [
+      [
+        "add_content",
+        "courses",
+        "content"
+      ],
+      [
+        "change_content",
+        "courses",
+        "content"
+      ],
+      [
+        "delete_content",
+        "courses",
+        "content"
+      ],
+      [
+        "view_content",
+        "courses",
+        "content"
+      ],
+      [
+        "add_course",
+        "courses",
+        "course"
+      ],
+      [
+        "change_course",
+        "courses",
+        "course"
+      ],
+      [
+        "delete_course",
+        "courses",
+        "course"
+      ],
+      [
+        "view_course",
+        "courses",
+        "course"
+      ],
+      [
+        "add_file",
+        "courses",
+        "file"
+      ],
+      [
+        "change_file",
+        "courses",
+        "file"
+      ],
+      [
+        "delete_file",
+        "courses",
+        "file"
+      ],
+      [
+        "view_file",
+        "courses",
+        "file"
+      ],
+      [
+        "add_image",
+        "courses",
+        "image"
+      ],
+      [
+        "change_image",
+        "courses",
+        "image"
+      ],
+      [
+        "delete_image",
+        "courses",
+        "image"
+      ],
+      [
+        "view_image",
+        "courses",
+        "image"
+      ],
+      [
+        "add_module",
+        "courses",
+        "module"
+      ],
+      [
+        "change_module",
+        "courses",
+        "module"
+      ],
+      [
+        "delete_module",
+        "courses",
+        "module"
+      ],
+      [
+        "view_module",
+        "courses",
+        "module"
+      ],
+      [
+        "add_text",
+        "courses",
+        "text"
+      ],
+      [
+        "change_text",
+        "courses",
+        "text"
+      ],
+      [
+        "delete_text",
+        "courses",
+        "text"
+      ],
+      [
+        "view_text",
+        "courses",
+        "text"
+      ],
+      [
+        "add_video",
+        "courses",
+        "video"
+      ],
+      [
+        "change_video",
+        "courses",
+        "video"
+      ],
+      [
+        "delete_video",
+        "courses",
+        "video"
+      ],
+      [
+        "view_video",
+        "courses",
+        "video"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "Mathematics",
+    "slug": "mathematics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "Music",
+    "slug": "music"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 3,
+  "fields": {
+    "title": "Physics",
+    "slug": "physics"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 4,
+  "fields": {
+    "title": "Programming",
+    "slug": "programming"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 2,
+    "title": "Limits and Continuity",
+    "description": "Explore the foundational concept of a limit, understand mathematical continuity, and learn how to analyze the behavior of functions at specific points and infinity.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "Derivatives and Differentiation Techniques",
+    "description": "Master the rules of differentiation, understand the geometric interpretation of a derivative as a rate of change, and apply them to solve real-world optimization problems.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 3,
+    "title": "Vectors and Coordinate Spaces",
+    "description": "Learn about vector operations, linear independence, spans, and how high-dimensional data points are represented and manipulated in coordinate spaces.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 6,
+  "fields": {
+    "course": 3,
+    "title": "Matrices and Linear Transformations",
+    "description": "Understand matrix multiplication, determinants, and inverse matrices, discovering how they act as transformations to reshape and project data structures.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 7,
+  "fields": {
+    "course": 4,
+    "title": "Pitch, Notation, and Clefs",
+    "description": "Get familiar with the musical alphabet, learn to read notes on both the treble and bass clefs, and understand how to use accidentals like sharps and flats.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 8,
+  "fields": {
+    "course": 4,
+    "title": "Rhythm, Meter, and Basic Intervals",
+    "description": "Discover note values, rests, and time signatures to accurately count beats, while learning to measure the distance between pitches using intervals.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 9,
+  "fields": {
+    "course": 5,
+    "title": "Interface Navigation and Session View",
+    "description": "Master the layout of Ableton Live, understand the unique difference between Arrangement and Session views, and learn how to import and warp audio loops.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 10,
+  "fields": {
+    "course": 5,
+    "title": "MIDI Sequencing and Virtual Instruments",
+    "description": "Dive into the MIDI editor to program your own drums and melodies, utilize built-in virtual synthesizers, and shape your sounds with basic audio effects.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 11,
+  "fields": {
+    "course": 6,
+    "title": "Kinematics: Describing Motion",
+    "description": "Study the concepts of displacement, velocity, and acceleration to mathematically map and describe how objects move through space and time without looking at the forces causing it.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 12,
+  "fields": {
+    "course": 6,
+    "title": "Newton's Laws and Forces",
+    "description": "Investigate the actual causes of motion through Newton's three fundamental laws, exploring real-world forces like gravity, friction, tension, and centripetal force.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 13,
+  "fields": {
+    "course": 7,
+    "title": "The Birth of Quantum Theory and Wave-Particle Duality",
+    "description": "Explore the historic anomalies that broke classical physics, leading to the discovery that light and matter share both particle-like and wave-like characteristics.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 14,
+  "fields": {
+    "course": 7,
+    "title": "The Schrödinger Equation and Quantum States",
+    "description": "Understand the central equation governing the subatomic world, diving into wave functions, probability density, and the mind-bending concept of superposition.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 15,
+  "fields": {
+    "course": 8,
+    "title": "Variables, Data Types, and Control Flow",
+    "description": "Set up your development environment, learn how Python stores data using variables, and direct program logic using conditional statements (if/else) and loops.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 16,
+  "fields": {
+    "course": 8,
+    "title": "Functions and Core Data Structures",
+    "description": "Write clean, reusable blocks of code using functions, and learn to manage larger collections of data efficiently using lists, dictionaries, and tuples.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 17,
+  "fields": {
+    "course": 9,
+    "title": "Frontend Essentials with HTML, CSS, and JavaScript",
+    "description": "Build the semantic structure of web pages, style them beautifully with modern CSS layout techniques, and add client-side interactivity using core JavaScript.",
+    "order": 0
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 18,
+  "fields": {
+    "course": 9,
+    "title": "Backend Architecture with Node.js and Databases",
+    "description": "Create a functional local server, handle HTTP requests, and connect your application to a database to securely store, update, and retrieve persistent user data.",
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 2,
+  "fields": {
+    "module": 3,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 1,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 3,
+  "fields": {
+    "module": 4,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 2,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 4,
+  "fields": {
+    "module": 5,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 3,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 5,
+  "fields": {
+    "module": 6,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 4,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 6,
+  "fields": {
+    "module": 7,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 5,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 7,
+  "fields": {
+    "module": 8,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 6,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 8,
+  "fields": {
+    "module": 9,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 7,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 9,
+  "fields": {
+    "module": 10,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 8,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 10,
+  "fields": {
+    "module": 11,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 9,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 11,
+  "fields": {
+    "module": 12,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 10,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 12,
+  "fields": {
+    "module": 13,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 11,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 13,
+  "fields": {
+    "module": 14,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 12,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 14,
+  "fields": {
+    "module": 15,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 13,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 15,
+  "fields": {
+    "module": 16,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 14,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 16,
+  "fields": {
+    "module": 17,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 15,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 17,
+  "fields": {
+    "module": 18,
+    "content_type": [
+      "courses",
+      "text"
+    ],
+    "object_id": 16,
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 18,
+  "fields": {
+    "module": 3,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 1,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 19,
+  "fields": {
+    "module": 4,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 2,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 20,
+  "fields": {
+    "module": 5,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 3,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 21,
+  "fields": {
+    "module": 6,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 4,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 22,
+  "fields": {
+    "module": 7,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 5,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 23,
+  "fields": {
+    "module": 8,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 6,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 24,
+  "fields": {
+    "module": 9,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 7,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 25,
+  "fields": {
+    "module": 10,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 8,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 26,
+  "fields": {
+    "module": 15,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 9,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 27,
+  "fields": {
+    "module": 16,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 10,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 28,
+  "fields": {
+    "module": 17,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 11,
+    "order": 1
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 29,
+  "fields": {
+    "module": 18,
+    "content_type": [
+      "courses",
+      "image"
+    ],
+    "object_id": 12,
+    "order": 1
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$xmoqOq7gBLZ9juhFP79Irl$zKSR3nccg7OlpAZLS6X7Phe1n66mB1/brEYNcIqNubw=",
+    "last_login": "2026-06-06T15:47:17.266Z",
+    "is_superuser": true,
+    "username": "max",
+    "first_name": "",
+    "last_name": "",
+    "email": "maxandreev27@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-03T12:44:48.553Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$naLD86izz6qL2dewPluRbN$B/E5Hkwk2oUuoPrY0wwEzijyyb6gpzk/idvgAhXUGhs=",
+    "last_login": "2026-06-06T14:32:32.757Z",
+    "is_superuser": false,
+    "username": "instructor",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-04T12:32:49Z",
+    "groups": [
+      [
+        "Instructors"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$04bIU9807F1zg4T1RRkW0r$/xtAQCHCTbIO7kqKX1miW7WEdadRS/BnfmEtn2fQRSI=",
+    "last_login": "2026-06-05T17:09:06.705Z",
+    "is_superuser": false,
+    "username": "student",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-04T16:12:30.008Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$JItyUHzURLqdJjDMrwri0U$1Pei4rFtPMfyFejEZE9o5Pw1YFprOIgTU3yheiWFbn0=",
+    "last_login": "2026-06-05T17:08:33.472Z",
+    "is_superuser": false,
+    "username": "student2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-05T17:08:33.196Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 1,
+    "title": "Calculus: From Theory to Practical Applications",
+    "slug": "calculus-from-theory-to-practical-applications",
+    "overview": "This course covers the fundamental concepts of differential and integral calculus. You will learn how to analyze functions, find limits, calculate derivatives and integrals, and apply this knowledge to solve practical problems in physics, economics, and engineering.",
+    "created": "2026-06-05T18:12:52.073Z",
+    "students": [
+      [
+        "max"
+      ],
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 1,
+    "title": "Linear Algebra and Geometry for Data Science",
+    "slug": "linear-algebra-and-geometry-for-data-science",
+    "overview": "An intensive program focused on mastering vectors, matrices, linear transformations, and eigenvalues. These concepts form the mathematical foundation for machine learning algorithms, computer vision, and big data analysis.",
+    "created": "2026-06-05T18:13:11.319Z",
+    "students": [
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 2,
+    "title": "Music Theory and Solfège for Beginners",
+    "slug": "music-theory-and-solfege-for-beginners",
+    "overview": "This course is designed for anyone wanting to learn how to read sheet music, understand rhythmic structures, and build chords and intervals. The knowledge gained will provide a solid foundation for playing any instrument, singing, or songwriting.",
+    "created": "2026-06-05T18:13:29.377Z",
+    "students": [
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 5,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 2,
+    "title": "Electronic Music Production in Ableton Live",
+    "slug": "electronic-music-production-in-ableton-live",
+    "overview": "A hands-on course in digital audio recording, arrangement, and production. You will learn how to navigate a DAW, synthesize unique sounds, apply audio effects, and create your own tracks from the very first note to the final mix.",
+    "created": "2026-06-05T18:13:45.919Z",
+    "students": [
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 6,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 3,
+    "title": "Classical Mechanics: Laws of Motion and the Universe",
+    "slug": "classical-mechanics-laws-of-motion-and-the-universe",
+    "overview": "A deep dive into Newtonian physics. The course covers kinematics, dynamics, the laws of conservation of energy and momentum, and the basics of celestial mechanics, allowing you to understand the motion of objects both on Earth and in deep space.",
+    "created": "2026-06-05T18:14:05.568Z",
+    "students": [
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 7,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 3,
+    "title": "Introduction to Quantum Physics: The Subatomic World",
+    "slug": "introduction-to-quantum-physics-the-subatomic-world",
+    "overview": "This course opens the door to the mind-bending world of subatomic particles. You will explore wave-particle duality, the Schrödinger equation, quantum entanglement, and see how these paradoxical theories are applied in modern technologies like lasers and quantum computing.",
+    "created": "2026-06-05T18:14:22.852Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 8,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 4,
+    "title": "Python Programming Basics: A Fast Track",
+    "slug": "python-programming-basics-a-fast-track",
+    "overview": "An ideal starting point for absolute beginners. You will master the basic syntax of Python, learn to work with variables, loops, functions, and core data structures. By the end of the course, you will write your first automation scripts and simple games.",
+    "created": "2026-06-05T18:14:42.131Z",
+    "students": [
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 9,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "subject": 4,
+    "title": "Full-Stack Web Development: Building Modern Applications",
+    "slug": "full-stack-web-development-building-modern-applications",
+    "overview": "A comprehensive program for aspiring web developers. The course covers frontend technologies (HTML5, CSS3, modern JavaScript, and React) as well as backend development (Node.js, Express, and databases), enabling you to design and launch fully functional websites from scratch.",
+    "created": "2026-06-05T18:15:03.447Z",
+    "students": [
+      [
+        "max"
+      ],
+      [
+        "instructor"
+      ],
+      [
+        "student2"
+      ]
+    ]
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 1,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Understanding the Concept of Limits and Mathematical Approach",
+    "created": "2026-06-06T14:50:51.979Z",
+    "updated": "2026-06-06T14:50:51.979Z",
+    "content": "A limit describes the behavior of a function as its input approaches a specific value, rather than the function's value at that exact point. Formally, we write this as:$$\\lim_{x \\to c} f(x) = L$$This means as $x$ gets arbitrarily close to $c$, the value of $f(x)$ gets close to $L$. This concept is crucial because it allows us to analyze points where a function might normally be undefined (like dividing by zero), laying the necessary groundwork for continuity and derivatives."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "The Power Rule and Instantaneous Rate of Change",
+    "created": "2026-06-06T14:51:18.329Z",
+    "updated": "2026-06-06T14:51:18.329Z",
+    "content": "The derivative represents the exact rate of change at a single point, visually represented as the slope of a tangent line to a curve. To calculate derivatives efficiently without using limits every time, we use differentiation rules. The most fundamental of these is the Power Rule:$$\\frac{d}{dx}[x^n] = n \\cdot x^{n-1}$$For example, the derivative of $f(x) = x^3$ is $f'(x) = 3x^2$. This formula allows us to quickly calculate acceleration from velocity or find local maximum and minimum points in optimization problems."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Introduction to Vectors and Dot Products",
+    "created": "2026-06-06T14:51:54.590Z",
+    "updated": "2026-06-06T14:51:54.590Z",
+    "content": "In data science, a vector is essentially an ordered list of numbers representing a point or a direction in a multi-dimensional space. If you have an dataset of housing prices, one vector might hold features like [SquareFootage, Bedrooms, Price]. A critical operation here is the dot product of two vectors $\\mathbf{a}$ and $\\mathbf{b}$:$$\\mathbf{a} \\cdot \\mathbf{b} = \\sum_{i=1}^{n} a_i b_i$$The dot product yields a single scalar value. If the dot product equals $0$, the vectors are orthogonal (at a 90° angle), meaning the features they represent are completely independent of each other."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 4,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Matrix Multiplication as Space Transformation",
+    "created": "2026-06-06T14:52:11.138Z",
+    "updated": "2026-06-06T14:52:11.138Z",
+    "content": "A matrix can be viewed as an operator that transforms space—rotating, scaling, or shearing data points. When you multiply a matrix by a vector, you are moving that vector to a new position in the coordinate system. To multiply matrix $A$ by matrix $B$, the number of columns in $A$ must exactly equal the number of rows in $B$. This operation is foundational for projecting high-dimensional datasets down to fewer dimensions, a technique widely used in Principal Component Analysis (PCA)."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 5,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Decoding the Treble Clef and Staff Lines",
+    "created": "2026-06-06T14:52:41.951Z",
+    "updated": "2026-06-06T14:52:41.951Z",
+    "content": "The musical staff consists of 5 horizontal lines and 4 spaces where notes are placed. The Treble Clef (also known as the G-Clef) is used for higher-pitched instruments and voices. It loops specifically around the second line from the bottom, designating that line as the note G.\r\n\r\nThe lines from bottom to top represent: E, G, B, D, F (Mnemonic: Every Good Boy Does Fine).\r\n\r\nThe spaces from bottom to top spell out the word: F, A, C, E."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 6,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Understanding Time Signatures and Rhythmic Value",
+    "created": "2026-06-06T14:52:55.124Z",
+    "updated": "2026-06-06T14:52:55.124Z",
+    "content": "Time signatures dictate the pulse and rhythm of a piece of music and appear as two numbers at the start of a musical staff.\r\n\r\nThe top number indicates how many beats are in each measure.\r\n\r\nThe bottom number defines which note value receives exactly one beat.\r\nFor example, in a common 4/4 time signature, there are 4 beats per measure, and the quarter note (represented by the bottom 4) gets a single beat. A whole note in this signature would span 4 full beats."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 7,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Navigating the Session View vs. Arrangement View",
+    "created": "2026-06-06T14:53:17.471Z",
+    "updated": "2026-06-06T14:53:17.471Z",
+    "content": "Ableton Live features a unique dual-interface design. The Session View is a non-linear workspace organized in vertical tracks and horizontal rows (scenes). It allows you to launch audio and MIDI clips independently without being locked to a timeline, making it perfect for improvisation, live performance, and sketching structural ideas. Pressing the Tab key instantly toggles to the Arrangement View, which functions as a traditional left-to-right timeline for final song structuring and mixing."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 8,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Programming Beats Using the Drum Rack",
+    "created": "2026-06-06T14:53:33.303Z",
+    "updated": "2026-06-06T14:53:33.303Z",
+    "content": "The Drum Rack is a versatile stock instrument container in Ableton Live. It features a grid of 128 empty sample pads. When you drag an audio file (like a kick drum or a snare) onto a pad, it maps that sound to a specific MIDI note. By double-clicking an empty clip slot, you open the MIDI Note Editor, where you can use the Draw tool to click notes directly onto a grid grid, defining exactly when each drum element fires in your loop."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 9,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Kinematic Equations for Constant Acceleration",
+    "created": "2026-06-06T14:54:07.761Z",
+    "updated": "2026-06-06T14:54:07.761Z",
+    "content": "Kinematics describes how objects move without analyzing the forces that cause the movement. When an object undergoes constant acceleration ($a$), we can calculate its final velocity ($v$) or position ($x$) at any point in time ($t$) using standard equations. The core formula for displacement is:$$x = x_0 + v_0t + \\frac{1}{2}at^2$$Where $x_0$ is the initial position and $v_0$ is the initial velocity. This enables us to predict exactly where a falling object or accelerating vehicle will be at a given millisecond."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 10,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Applying Newton's Second Law to Free-Body Diagrams",
+    "created": "2026-06-06T14:54:22.208Z",
+    "updated": "2026-06-06T14:54:22.208Z",
+    "content": "Newton's Second Law provides the link between forces and acceleration. It states that the acceleration of an object is directly proportional to the net force acting on it, and inversely proportional to its mass:$$\\mathbf{F}_{\\text{net}} = m\\mathbf{a}$$To apply this in physics problems, we isolate an object and draw a Free-Body Diagram (FBD), mapping out every vector force acting on it (such as gravity pulling down, friction pulling backward, and normal force pushing up). Summing these force vectors reveals the net force vector causing acceleration."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 11,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "The Photoelectric Effect and the Particle Nature of Light",
+    "created": "2026-06-06T14:54:46.592Z",
+    "updated": "2026-06-06T14:54:46.592Z",
+    "content": "Classical physics viewed light purely as a continuous wave. However, the photoelectric effect proved otherwise. When light shines on a metal surface, electrons are ejected—but only if the light's frequency is high enough, regardless of its brightness. Albert Einstein explained this by showing that light travels in discrete packets of energy called photons. The energy of a individual photon is calculated using:$$E = hf$$Where $h$ is Planck's constant and $f$ is the frequency. This discovery proved that light exhibits wave-particle duality."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 12,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "The Wave Function and Superposition",
+    "created": "2026-06-06T14:55:01.872Z",
+    "updated": "2026-06-06T14:55:01.872Z",
+    "content": "In the quantum realm, particles do not occupy definite positions until they are measured. Instead, their state is mathematically defined by a wave function, denoted by the Greek letter $\\Psi$ (Psi). The equation governing this behavior is the Schrödinger Equation:$$i\\hbar \\frac{\\partial}{\\partial t}\\Psi = \\hat{H}\\Psi$$The square of the absolute value of the wave function, $|\\Psi|^2$, gives the probability of finding a particle at a specific location. Before measurement, the system exists in a superposition, meaning it is simultaneously in multiple possible states."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 13,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Control Flow with Conditional if-elif-else Statements",
+    "created": "2026-06-06T14:55:58.253Z",
+    "updated": "2026-06-06T14:55:58.253Z",
+    "content": "Programs need to make decisions based on changing data values. In Python, this is achieved using conditional blocks. The interpreter evaluates an expression to either True or False:\r\ntemperature = 22\r\n\r\nif temperature > 30:\r\n    print(\"It's hot outside.\")\r\nelif temperature > 15:\r\n    print(\"The weather is pleasant.\")\r\nelse:\r\n    print(\"It's cold outside.\")\r\nPython relies heavily on strict indentation (usually 4 spaces) to define which lines of code belong inside each execution block."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 14,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Storing Structured Data Using Python Dictionaries",
+    "created": "2026-06-06T14:56:29.256Z",
+    "updated": "2026-06-06T14:56:29.256Z",
+    "content": "A dictionary in Python is a built-in data structure that stores items as key-value pairs. Unlike items in lists, which are accessed via their numerical index position, dictionary values are retrieved using a unique key (typically a string):\r\nuser_profile = {\r\n    \"username\": \"max_dev\",\r\n    \"status\": \"active\",\r\n    \"login_attempts\": 3\r\n}\r\n\r\n# Accessing data\r\nprint(user_profile[\"username\"]) # Outputs: max_dev\r\nDictionaries are optimized for extremely fast data retrieval, making them standard tools for working with API payloads and complex databases."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 15,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Layout Architecture with CSS Flexbox",
+    "created": "2026-06-06T14:56:50.087Z",
+    "updated": "2026-06-06T14:56:50.087Z",
+    "content": "The Flexible Box Layout Module (Flexbox) is a one-dimensional layout model used to align and distribute space among items in a user interface, even when their size is unknown or dynamic. By declaring display: flex; on a parent container element, you gain access to powerful alignment properties:\r\n\r\njustify-content: Aligns child items along the main horizontal axis (e.g., center, space-between).\r\n\r\nalign-items: Aligns child items along the cross vertical axis (e.g., center, stretch).\r\nThis eliminates the need for complex CSS floating or manual positional calculations."
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 16,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Building Basic Routing Logic in Express.js",
+    "created": "2026-06-06T14:57:18.993Z",
+    "updated": "2026-06-06T14:57:18.993Z",
+    "content": "The backend tier handles requests coming from incoming web browsers, communicates with databases, and sends back responses. Using Express.js (a minimalist framework for Node.js), defining an endpoint route looks like this:\r\n\r\nconst express = require('express');\r\nconst app = express();\r\n\r\napp.get('/api/users', (req, res) => {\r\n    const users = [{ id: 1, name: \"Alice\" }, { id: 2, name: \"Bob\" }];\r\n    res.json(users);\r\n});\r\n\r\napp.listen(3000, () => console.log('Server running on port 3000'));\r\n\r\nThe code above listens for incoming HTTP GET requests at the /api/users path and responds by delivering user data cleanly formatted as JSON strings."
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 1,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Limits and Continuity",
+    "created": "2026-06-06T14:59:17.628Z",
+    "updated": "2026-06-06T14:59:17.628Z",
+    "file": "images/maxresdefault.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Derivatives and Differentiation Techniques",
+    "created": "2026-06-06T15:00:25.200Z",
+    "updated": "2026-06-06T15:00:25.200Z",
+    "file": "images/Method_of_Differentiation-images-0.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Vectors and Coordinate Spaces",
+    "created": "2026-06-06T15:05:44.313Z",
+    "updated": "2026-06-06T15:12:53.821Z",
+    "file": "images/stock-vector-vector-illustration-of-the-three-axis-coordinate-system-2309752475.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 4,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Matrices and Linear Transformations",
+    "created": "2026-06-06T15:07:23.347Z",
+    "updated": "2026-06-06T15:13:01.771Z",
+    "file": "images/maxresdefault_jGKsJIq.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 5,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Pitch, Notation, and Clefs",
+    "created": "2026-06-06T15:10:48.602Z",
+    "updated": "2026-06-06T15:10:48.602Z",
+    "file": "images/5.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 6,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Rhythm, Meter, and Basic Intervals",
+    "created": "2026-06-06T15:11:34.468Z",
+    "updated": "2026-06-06T15:11:34.468Z",
+    "file": "images/simple-meter-chart.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 7,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Interface Navigation and Session View",
+    "created": "2026-06-06T15:14:11.462Z",
+    "updated": "2026-06-06T15:14:11.462Z",
+    "file": "images/first_steps_.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 8,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "MIDI Sequencing and Virtual Instruments",
+    "created": "2026-06-06T15:14:58.868Z",
+    "updated": "2026-06-06T15:14:58.868Z",
+    "file": "images/pro1sessionwit.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 9,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Variables, Data Types, and Control Flow",
+    "created": "2026-06-06T15:16:44.352Z",
+    "updated": "2026-06-06T15:16:44.352Z",
+    "file": "images/0__rjQa3EK-tS7Qp3f.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 10,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Functions and Core Data Structures",
+    "created": "2026-06-06T15:17:26.078Z",
+    "updated": "2026-06-06T15:17:26.078Z",
+    "file": "images/1_mLRD8leEkOFY3A87akoaXQ.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 11,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Frontend Essentials with HTML, CSS, and JavaScript",
+    "created": "2026-06-06T15:18:58.024Z",
+    "updated": "2026-06-06T15:18:58.024Z",
+    "file": "images/9-essential-front-end-developer-skills-1024x511.webp"
+  }
+},
+{
+  "model": "courses.image",
+  "pk": 12,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Backend Architecture with Node.js and Databases",
+    "created": "2026-06-06T15:19:31.476Z",
+    "updated": "2026-06-06T15:19:31.476Z",
+    "file": "images/1768905949774.webp"
+  }
+},
+{
+  "model": "courses.video",
+  "pk": 1,
+  "fields": {
+    "owner": [
+      "instructor"
+    ],
+    "title": "Custom User Model",
+    "created": "2026-06-04T16:44:59.701Z",
+    "updated": "2026-06-04T16:46:23.095Z",
+    "url": "https://www.youtube.com/watch?v=bgV39DlmZ2U"
+  }
+}
+]
