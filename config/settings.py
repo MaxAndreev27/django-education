@@ -183,14 +183,16 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 LOGIN_REDIRECT_URL = reverse_lazy("student_course_list")
 
-REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/0")
-if "protocol" not in REDIS_URL:
-    REDIS_URL += ("&" if "?" in REDIS_URL else "?") + "protocol=2"
+BASE_REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/0")
+
+REDIS_CACHE_URL = BASE_REDIS_URL
+if "protocol=" not in REDIS_CACHE_URL:
+    REDIS_CACHE_URL += ("&" if "?" in REDIS_CACHE_URL else "?") + "protocol=2"
 
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",
-        "LOCATION": REDIS_URL,
+        "LOCATION": REDIS_CACHE_URL,
     }
 }
 
@@ -204,11 +206,19 @@ REST_FRAMEWORK = {
     ]
 }
 
+REDIS_CHANNEL_URL = BASE_REDIS_URL
+if "protocol=" not in REDIS_CHANNEL_URL:
+    REDIS_CHANNEL_URL += ("&" if "?" in REDIS_CHANNEL_URL else "?") + "protocol=2"
+if "socket_timeout=" not in REDIS_CHANNEL_URL:
+    REDIS_CHANNEL_URL += (
+        "&" if "?" in REDIS_CHANNEL_URL else "?"
+    ) + "socket_timeout=60"
+
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [REDIS_URL],
+            "hosts": [REDIS_CHANNEL_URL],
         },
     },
 }
