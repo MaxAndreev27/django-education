@@ -7,21 +7,6 @@ from django.utils import timezone
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
-    # async def connect(self):
-    #     # self.user = self.scope["user"]
-    #     self.user = self.scope.get("user")
-    #     # self.id = self.scope["url_route"]["kwargs"]["course_id"]
-    #     url_route = self.scope.get("url_route") or {}
-    #     kwargs = url_route.get("kwargs") or {}
-    #     self.id = kwargs.get("course_id")
-
-    #     self.room_group_name = f"chat_{self.id}"
-
-    #     # join room group
-    #     await self.channel_layer.group_add(self.room_group_name, self.channel_name)
-    #     # accept connection
-    #     await self.accept()
-
     async def connect(self):
         self.user = self.scope.get("user")
         kwargs = (self.scope.get("url_route") or {}).get("kwargs") or {}
