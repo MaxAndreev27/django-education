@@ -45,12 +45,46 @@ A modern Learning Management System (LMS) web application built following Chapte
 ### 1. Clone the Repository & Setup Environment
 
 ```bash
-git clone [https://github.com/your-username/django-elearning-platform.git](https://github.com/your-username/django-elearning-platform.git)
-cd django-elearning-platform
+git clone https://github.com/MaxAndreev27/django-education.git
+cd django-education
 
-python -m venv venv
-source venv/bin/activate  # For Linux/macOS
-# venv\Scripts\activate   # For Windows
+python -m venv .venv
+source .venv/bin/activate  # For Linux/macOS
+# .venv\Scripts\activate   # For Windows
 
 pip install -r requirements.txt
 ```
+
+### 2. Run the Project
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+### 3. Optional: Redis and Channels
+
+This project uses Redis for caching and Django Channels. If you are running the full real-time stack locally, make sure Redis is installed and running before starting the app.
+
+```bash
+redis-server
+```
+
+---
+
+## 🤝 Community Standards
+
+This repository includes the standard GitHub community health files to make participation clearer and more welcoming:
+
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — expected community behavior and enforcement guidance
+- [CONTRIBUTING.md](CONTRIBUTING.md) — how to contribute and validate changes
+- [SECURITY.md](SECURITY.md) — how to report vulnerabilities privately
+- [LICENSE](LICENSE) — project license information
+
+We welcome contributions, bug reports, and suggestions through GitHub issues and pull requests.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

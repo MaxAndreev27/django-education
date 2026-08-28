@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability report
+    url: https://github.com/MaxAndreev27/django-education/security
+    about: Please report security issues privately and do not open a public issue.
