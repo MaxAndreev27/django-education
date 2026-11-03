@@ -31,7 +31,7 @@ A modern Learning Management System (LMS) web application built following Chapte
 
 ## 🛠 Tech Stack
 
-- **Backend:** Python 3.13+ / Django 6+
+- **Backend:** Python 3.12+ / Django 6+
 - **Real-time & Async:** Django Channels / Daphne (ASGI)
 - **API Engine:** Django REST Framework (DRF)
 - **Database:** PostgreSQL (or SQLite for local development)
@@ -48,18 +48,15 @@ A modern Learning Management System (LMS) web application built following Chapte
 git clone https://github.com/MaxAndreev27/django-education.git
 cd django-education
 
-python -m venv .venv
-source .venv/bin/activate  # For Linux/macOS
-# .venv\Scripts\activate   # For Windows
-
-pip install -r requirements.txt
+# Requires uv: https://docs.astral.sh/uv/
+uv sync  # installs Python 3.12 and dependencies into .venv
 ```
 
 ### 2. Run the Project
 
 ```bash
-python manage.py migrate
-python manage.py runserver
+uv run python manage.py migrate
+uv run python manage.py runserver
 ```
 
 ### 3. Optional: Redis and Channels

@@ -4,8 +4,8 @@ Describe the change and the motivation behind it.
 
 ## Testing
 
-- [ ] Ran `python manage.py check`
-- [ ] Ran `python manage.py test`
+- [ ] Ran `uv run python manage.py check`
+- [ ] Ran `uv run python manage.py test`
 - [ ] Verified the relevant behavior manually
 
 ## Notes

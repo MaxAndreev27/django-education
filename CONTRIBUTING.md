@@ -5,20 +5,18 @@ Thanks for your interest in improving this project.
 ## How to contribute
 
 1. Fork the repository and create a feature branch.
-2. Create a virtual environment and install dependencies:
+2. Install [uv](https://docs.astral.sh/uv/) and sync dependencies:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv sync
 ```
 
 3. Make your changes and keep them focused.
 4. Run the relevant checks before opening a pull request:
 
 ```bash
-python manage.py check
-python manage.py test
+uv run python manage.py check
+uv run python manage.py test
 ```
 
 5. Open a pull request with a clear description of the change.
